@@ -51,7 +51,7 @@ public class ServiceImpl implements ClinicServices {
     public Clinic getClinicById(Integer id) {
 
            return clinicRepo.findById(id)
-                   .orElseThrow(()-> new ClinicNotFoundException("No Clinic with id " + " id " + "is found in Record"));
+                   .orElseThrow(()-> new ClinicNotFoundException("No Clinic with id : " +  id  + "is found in Record"));
 
     }
 }
